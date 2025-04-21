@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GATE E-Learning Platform</title>
+  <link rel="stylesheet" href="newstyles.css">
+</head>
+<body>
+  <header>
+    <h1>GateWise E-Learning Platform</h1>
+    <p>Prepare Smart. Succeed Big.</p>
+  </header>
+
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="signin.html">Login</a>
+  </nav>
+
+  <div class="container">
+    <!-- Course List -->
+    <section id="courses">
+      <h3>Available Courses</h3>
+      <div class="course-grid">
+        <!-- Courses will be dynamically loaded here -->
+      </div>
+    </section>
+
+    <!-- Course Details -->
+    <section id="courseDetail" class="card" style="display:none">
+      <h3 id="courseTitle">Course Title</h3>
+      <p id="courseDesc">Description here...</p>
+      <h4>Course Video</h4>
+      <iframe id="courseVideo" src="" frameborder="0" allowfullscreen></iframe>
+      <h4>Test Questions</h4>
+      <div id="courseQuestions"></div>
+      <button class="btn" onclick="completeCourse()">Mark as Complete</button>
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="card">
+      <h3>About</h3>
+      <p>This platform offers video courses, practice questions, and progress tracking tailored for GATE aspirants.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+      <h3>Contact Us</h3>
+      <p>Email: support@gatelearning.com</p>
+    </section>
+  </div>
+
+  <script src="newscript.js"></script>
+</body>
+</html>
